@@ -44,21 +44,22 @@ const PianoRoll: React.FC<PianoRollProps> = ({ notes, pattern }) => {
   const derivedNotes = deriveNotesArray(notes, pattern);
 
   return (
-    <div className="piano-roll">
-      <div className="grid">
+    <div className="piano-roll" style={{ display: 'flex' }}>
+      <div className="keyboard">
         {keys.map((key, rowIndex) => (
           <div
             key={rowIndex}
-            className={`grid-cell key ${key.includes('#') ? 'black-key' : 'white-key'}`}
-            style={{ gridColumn: 1, gridRow: rowIndex + 1 }}
+            className={`key ${key.includes('#') ? 'black-key' : 'white-key'}`}
           />
         ))}
+      </div>
+      <div className="grid">
         {Array.from({ length: 16 * 12 }).map((_, cellIndex) => (
           <div
             key={cellIndex}
             className="grid-cell"
             style={{
-              gridColumn: Math.floor(cellIndex / 12) + 2,
+              gridColumn: Math.floor(cellIndex / 12) + 1,
               gridRow: (cellIndex % 12) + 1,
             }}
           />
@@ -68,7 +69,7 @@ const PianoRoll: React.FC<PianoRollProps> = ({ notes, pattern }) => {
             key={index}
             className="note"
             style={{
-              gridColumn: `${note.column} / span ${note.width}`,
+              gridColumn: `${note.column - 1} / span ${note.width}`,
               gridRow: note.row,
             }}
           />

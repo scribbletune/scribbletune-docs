@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/code-block"
+import PianoRoll from "@/components/ui/piano-roll";
 import Link from "next/link"
 
 export default function DocsHomePage() {
@@ -27,6 +28,11 @@ scribble.midi(clip, 'c.mid');`
         <h2 className="text-xl mb-2">Here&apos;s some sample code:</h2>
         <CodeBlock code={sampleCode} />
       </div>
+
+      <p className="mb-4">
+        This will create a MIDI file that looks like this when imported in a DAW.
+      </p>
+      <PianoRoll notes={['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4']} pattern="x-x-x-x-x-x-x---" />
 
       <p className="mt-6">
         Please use the menu alongside for the various methods available or click here to learn how to{" "}
