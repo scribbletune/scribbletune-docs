@@ -88,7 +88,7 @@ scribble.midi(clip, 'sizzle-melody.mid');`
             </Link>
           </li>
           <li>
-            <Link href="/docs/core-api/clip" className="text-blue-400 hover:underline">
+            <Link href="/documentation/core/clip" className="text-blue-400 hover:underline">
               Exploring the full clip API
             </Link>
           </li>

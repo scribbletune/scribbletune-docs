@@ -78,11 +78,11 @@ scribble.midi(clip, 'arpeggiated.mid');`
         <h2 className="text-2xl font-bold mb-4">Try It Yourself</h2>
         <p className="mb-4">
           Ready to create your own music with Scribbletune? Check out the{" "}
-          <Link href="/docs/getting-started/installation" className="text-blue-400 hover:underline">
+          <Link href="/documentation/getting-started/installation" className="text-blue-400 hover:underline">
             installation guide
           </Link>{" "}
           to get started, or explore the{" "}
-          <Link href="/docs" className="text-blue-400 hover:underline">
+          <Link href="/documentation" className="text-blue-400 hover:underline">
             API documentation
           </Link>{" "}
           to learn more about the available methods.

@@ -4,24 +4,24 @@ export default function DocsSidebar() {
   const sections = [
     {
       title: "GETTING STARTED",
-      links: [{ href: "/docs/getting-started/installation", label: "Installation" }],
+      links: [{ href: "/documentation/getting-started/installation", label: "Installation" }],
     },
     {
       title: "CORE API",
       links: [
-        { href: "/docs/core-api/clip", label: "clip" },
-        { href: "/docs/core-api/scale", label: "scale" },
-        { href: "/docs/core-api/chord", label: "chord" },
-        { href: "/docs/core-api/arp", label: "arp" },
-        { href: "/docs/core-api/progression", label: "progression" },
-        { href: "/docs/core-api/midi", label: "midi" },
+        { href: "/documentation/core/clip", label: "clip" },
+        { href: "/documentation/core/scale", label: "scale" },
+        { href: "/documentation/core/chord", label: "chord" },
+        { href: "/documentation/core/arp", label: "arp" },
+        { href: "/documentation/core/progression", label: "progression" },
+        { href: "/documentation/core/midi", label: "midi" },
       ],
     },
     {
       title: "BROWSER",
       links: [
-        { href: "/docs/browser/session", label: "session" },
-        { href: "/docs/browser/channel", label: "channel" },
+        { href: "/documentation/browser/session", label: "session" },
+        { href: "/documentation/browser/channel", label: "channel" },
       ],
     },
   ]

@@ -29,7 +29,7 @@ scribble.midi(clip, 'c.mid');`
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/docs/getting-started/installation"
+                href="/documentation/getting-started/installation"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md flex items-center justify-center gap-2 transition-colors"
               >
                 Get Started <ArrowRight size={16} />
@@ -58,7 +58,7 @@ scribble.midi(clip, 'c.mid');`
               chord progressions, and rhythms.
             </p>
             <Link
-              href="/docs/core-api/clip"
+              href="/documentation/core/clip"
               className="text-blue-400 hover:text-blue-300 inline-flex items-center gap-1"
             >
               Learn more <ArrowRight size={14} />
@@ -75,7 +75,7 @@ scribble.midi(clip, 'c.mid');`
               Audio API.
             </p>
             <Link
-              href="/docs/browser/session"
+              href="/documentation/browser/session"
               className="text-purple-400 hover:text-purple-300 inline-flex items-center gap-1"
             >
               Learn more <ArrowRight size={14} />
@@ -92,7 +92,7 @@ scribble.midi(clip, 'c.mid');`
               music theory expert.
             </p>
             <Link
-              href="/docs/core-api/scale"
+              href="/documentation/core/scale"
               className="text-green-400 hover:text-green-300 inline-flex items-center gap-1"
             >
               Learn more <ArrowRight size={14} />
@@ -108,7 +108,7 @@ scribble.midi(clip, 'c.mid');`
           <CodeBlock code={sampleCode} />
           <div className="mt-8 text-center">
             <Link
-              href="/docs/getting-started/installation"
+              href="/documentation/getting-started/installation"
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md inline-flex items-center gap-2 transition-colors"
             >
               Start Creating Music <ArrowRight size={16} />

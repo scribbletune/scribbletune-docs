@@ -101,7 +101,7 @@ scribble.midi(songClip, 'song-progression.mid');`
             </Link>
           </li>
           <li>
-            <Link href="/docs/core-api/progression" className="text-blue-400 hover:underline">
+            <Link href="/documentation/core/progression" className="text-blue-400 hover:underline">
               Exploring the full progression API
             </Link>
           </li>

@@ -10,7 +10,7 @@ export default function MainNav() {
           <span className="font-bold text-xl">Scribbletune</span>
         </Link>
         <nav className="flex items-center gap-6">
-          <Link href="/docs" className="text-gray-200 hover:text-white">
+          <Link href="/documentation" className="text-gray-200 hover:text-white">
             Documentation
           </Link>
           <Link href="/examples" className="text-gray-200 hover:text-white">

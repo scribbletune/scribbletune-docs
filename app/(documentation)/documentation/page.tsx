@@ -36,7 +36,7 @@ scribble.midi(clip, 'c.mid');`
 
       <p className="mt-6">
         Please use the menu alongside for the various methods available or click here to learn how to{" "}
-        <Link href="/docs/getting-started/installation" className="text-blue-400 hover:underline">
+        <Link href="/documentation/getting-started/installation" className="text-blue-400 hover:underline">
           start using Scribbletune
         </Link>{" "}
         in your project.

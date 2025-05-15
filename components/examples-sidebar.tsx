@@ -46,7 +46,7 @@ export default function ExamplesSidebar() {
         ))}
       </div>
       <div className="p-4 border-t border-gray-800 mt-auto">
-        <Link href="/docs" className="text-gray-400 hover:text-white text-sm block mb-2">
+        <Link href="/documentation" className="text-gray-400 hover:text-white text-sm block mb-2">
           Documentation
         </Link>
         <Link
