@@ -3,8 +3,8 @@ import CodeBlock from '@/components/code-block';
 
 const MidiPage = () => (
   <div>
-    <h1>MIDI</h1>
-    <p>
+    <h1 className="text-3xl font-bold mb-6">midi</h1>
+    <p className="mb-4">
       Scribbletune exports clips as MIDI files using the{' '}
       <a href="https://github.com/dingram/jsmidgen">jsmidgen</a> module. As the
       name suggests, the <code>midi</code> method generates a MIDI file from its
@@ -22,7 +22,7 @@ midi(c); // Will create a file called music.mid
 // OR
 midi(c, 'c.mid'); // Will create a file called c.mid`}
     />
-    <p>You can also create downloadable MIDI files from the browser.</p>
+    <p className="my-4">You can also create downloadable MIDI files from the browser.</p>
     <CodeBlock
       code={`const c = scribble.clip({
   notes: scribble.scale('C4 major'),
