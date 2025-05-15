@@ -7,7 +7,7 @@ export default function DocsSidebar() {
       links: [{ href: "/documentation/getting-started/installation", label: "Installation" }],
     },
     {
-      title: "CORE API",
+      title: "CORE",
       links: [
         { href: "/documentation/core/clip", label: "clip" },
         { href: "/documentation/core/scale", label: "scale" },

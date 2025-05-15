@@ -5,24 +5,23 @@ export default function ExamplesSidebar() {
     {
       title: "BASICS",
       links: [
+        { href: "/examples/riff", label: "Riff" },
         { href: "/examples/simple-melody", label: "Simple Melody" },
-        { href: "/examples/chord-progression", label: "Chord Progression" },
-        { href: "/examples/arpeggios", label: "Arpeggios" },
+        { href: "/examples/chord-progressions", label: "Chord Progressions" },
       ],
     },
     {
-      title: "PATTERNS",
+      title: "BEATS",
       links: [
-        { href: "/examples/euclidean-rhythms", label: "Euclidean Rhythms" },
-        { href: "/examples/randomization", label: "Randomization" },
-        { href: "/examples/polyrhythms", label: "Polyrhythms" },
+        { href: "/examples/breakbeats", label: "Breakbeats" },
+        { href: "/examples/drumloop", label: "Drumloop" },
       ],
     },
     {
       title: "BROWSER",
       links: [
-        { href: "/examples/browser-synth", label: "Browser Synth" },
-        { href: "/examples/live-sequencer", label: "Live Sequencer" },
+        { href: "/examples/random-chords", label: "Random Chords" },
+        { href: "/examples/beat", label: "Beat (browser)" },
       ],
     },
   ]

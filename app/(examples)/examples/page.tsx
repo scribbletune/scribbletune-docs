@@ -9,20 +9,19 @@ export default function ExamplesHomePage() {
       icon: Music,
       color: "blue",
       examples: [
+        { name: "Riff", href: "/examples/riff" },
         { name: "Simple Melody", href: "/examples/simple-melody" },
-        { name: "Chord Progression", href: "/examples/chord-progression" },
-        { name: "Arpeggios", href: "/examples/arpeggios" },
+        { name: "Chord Progressions", href: "/examples/chord-progressions" },
       ],
     },
     {
-      title: "Patterns",
+      title: "Beats",
       description: "Explore different rhythmic and melodic patterns",
       icon: Layers,
       color: "purple",
       examples: [
-        { name: "Euclidean Rhythms", href: "/examples/euclidean-rhythms" },
-        { name: "Randomization", href: "/examples/randomization" },
-        { name: "Polyrhythms", href: "/examples/polyrhythms" },
+        { name: "Breakbeats", href: "/examples/breakbeats" },
+        { name: "Drumloop", href: "/examples/drumloop" },
       ],
     },
     {
@@ -31,8 +30,8 @@ export default function ExamplesHomePage() {
       icon: Code,
       color: "orange",
       examples: [
-        { name: "Browser Synth", href: "/examples/browser-synth" },
-        { name: "Live Sequencer", href: "/examples/live-sequencer" },
+        { name: "Random Chords", href: "/examples/random-chords" },
+        { name: "Beat (browser)", href: "/examples/beat" },
       ],
     },
   ]
