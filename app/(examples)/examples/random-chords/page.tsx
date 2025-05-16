@@ -3,8 +3,8 @@ import CodeBlock from "@/components/code-block";
 
 const RandomChordsPage = () => (
   <div>
-    <h1>Random Chords</h1>
-    <p>If you randomly pick 2 or 3 notes from a scale or mode, you’ll end up creating random chords. They won’t necessarily sound good, but you can generate a bunch of chord progressions and tweak something that you like from that bunch.</p>
+    <h1 className="text-3xl font-bold mb-6">Random Chords</h1>
+    <p className="my-4">If you randomly pick 2 or 3 notes from a scale or mode, you’ll end up creating random chords. They won’t necessarily sound good, but you can generate a bunch of chord progressions and tweak something that you like from that bunch.</p>
     <CodeBlock code={`const _ = require('lodash');
 const scribble = require('scribbletune');
 
@@ -23,7 +23,7 @@ scribble.midi(
     pattern,
   })
 );`} />
-    <p>Execute this file in your terminal with Node.js:</p>
+    <p className="my-4">Execute this file in your terminal with Node.js:</p>
     <CodeBlock code={`node random-chords.js`} />
   </div>
 );
