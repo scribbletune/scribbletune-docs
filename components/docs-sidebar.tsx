@@ -1,10 +1,15 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function DocsSidebar() {
   const sections = [
     {
       title: "GETTING STARTED",
-      links: [{ href: "/documentation/getting-started/installation", label: "Installation" }],
+      links: [
+        {
+          href: "/documentation/getting-started/installation",
+          label: "Installation",
+        },
+      ],
     },
     {
       title: "CORE",
@@ -24,10 +29,10 @@ export default function DocsSidebar() {
         { href: "/documentation/browser/channel", label: "channel" },
       ],
     },
-  ]
+  ];
 
   return (
-    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] hidden md:block overflow-y-auto">
+    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] md:block overflow-y-auto">
       <div className="p-4">
         {sections.map((section) => (
           <div key={section.title} className="mb-6">
@@ -35,7 +40,10 @@ export default function DocsSidebar() {
             <ul className="space-y-1">
               {section.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="block py-1 text-gray-300 hover:text-white">
+                  <Link
+                    href={link.href}
+                    className="block py-1 text-gray-300 hover:text-white"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -45,14 +53,19 @@ export default function DocsSidebar() {
         ))}
       </div>
       <div className="p-4 border-t border-gray-800 mt-auto">
-        <Link href="/about" className="text-gray-400 hover:text-white text-sm block mb-2">
+        <Link
+          href="/about"
+          className="text-gray-400 hover:text-white text-sm block mb-2"
+        >
           About
         </Link>
-        <Link href="/report-issue" className="text-gray-400 hover:text-white text-sm block">
+        <Link
+          href="/report-issue"
+          className="text-gray-400 hover:text-white text-sm block"
+        >
           Report an issue
         </Link>
       </div>
     </aside>
-  )
+  );
 }
-

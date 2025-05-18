@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function ExamplesSidebar() {
   const sections = [
@@ -24,10 +24,10 @@ export default function ExamplesSidebar() {
         { href: "/examples/beat", label: "Beat (browser)" },
       ],
     },
-  ]
+  ];
 
   return (
-    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] hidden md:block overflow-y-auto">
+    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] md:block overflow-y-auto">
       <div className="p-4">
         {sections.map((section) => (
           <div key={section.title} className="mb-6">
@@ -35,7 +35,10 @@ export default function ExamplesSidebar() {
             <ul className="space-y-1">
               {section.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="block py-1 text-gray-300 hover:text-white">
+                  <Link
+                    href={link.href}
+                    className="block py-1 text-gray-300 hover:text-white"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -45,7 +48,10 @@ export default function ExamplesSidebar() {
         ))}
       </div>
       <div className="p-4 border-t border-gray-800 mt-auto">
-        <Link href="/documentation" className="text-gray-400 hover:text-white text-sm block mb-2">
+        <Link
+          href="/documentation"
+          className="text-gray-400 hover:text-white text-sm block mb-2"
+        >
           Documentation
         </Link>
         <Link
@@ -57,6 +63,5 @@ export default function ExamplesSidebar() {
         </Link>
       </div>
     </aside>
-  )
+  );
 }
-
