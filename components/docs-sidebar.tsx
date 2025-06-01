@@ -113,7 +113,8 @@ export default function DocsSidebar() {
           About
         </Link>
         <Link
-          href="/report-issue"
+          href="https://github.com/scribbletune/scribbletune/issues/new?assignees=&labels=bug&template=bug_report.yml"
+          target="_blank"
           className="text-gray-400 hover:text-white text-sm block"
         >
           Report an issue
