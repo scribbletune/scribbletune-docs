@@ -62,7 +62,7 @@ export default function DocsSidebar() {
   ];
 
   return (
-    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] md:block overflow-y-auto">
+    <aside className="w-64 border-r border-gray-800 bg-[#1a1e24] md:block overflow-y-auto sticky top-0 h-screen">
       <div className="p-4">
         {sections.map((section) => (
           <div key={section.title} className="mb-6">
