@@ -6,28 +6,28 @@
   background-color: #20252c;
 }
 
-.keyboard {
+.piano-roll .keyboard {
   display: flex;
   flex-direction: column;
   width: 60px; /* Set a fixed width for the keyboard */
   height: 100%;
 }
 
-.key {
+.piano-roll .key {
   flex: 0 0 21px; /* Match the height of grid rows + 1px probably for border */
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
 
-.black-key {
+.piano-roll .black-key {
   background-color: black;
 }
 
-.white-key {
+.piano-roll .white-key {
   background-color: white;
 }
 
-.grid {
+.piano-roll .grid {
   display: grid;
   grid-template-rows: repeat(12, 20px); /* 12 rows for notes */
   grid-template-columns: repeat(16, 40px); /* 16 columns for beats */
@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.grid-cell {
+.piano-roll .grid-cell {
   width: 40px;
   height: 20p;
   border: 1px solid #c3c3c3;
@@ -44,13 +44,11 @@
 }
 
 /* Highlight every 4 columns a bit differently */
-.grid-cell:nth-child(-n + 48),
-.grid-cell:nth-child(n + 97):nth-child(-n + 144)
-{
+.piano-roll .grid-cell:nth-child(-n + 48),
+.piano-roll .grid-cell:nth-child(n + 97):nth-child(-n + 144) {
   background-color: #e8e8e8;
 }
 
-
-.note {
+.piano-roll .note {
   background-color: #942828;
 }

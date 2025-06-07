@@ -1,5 +1,6 @@
-import React from 'react';
-import './piano-roll.css'; // Import styles for the piano roll
+import React from "react";
+
+// Removed: Import styles globally instead
 
 interface PianoRollProps {
   notes: string[]; // Array of notes (e.g., ['C4', 'E4', 'G4', 'B4'])
@@ -16,15 +17,30 @@ const deriveNotesArray = (notes: string[], pattern: string) => {
   for (let i = 0; i < pattern.length; i++) {
     const char = pattern[i];
 
-    if (char === 'x') {
+    if (char === "x") {
       // Add a new note
       derivedNotes.push({
-        row: 12 - ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'].indexOf(notes[noteIndex].slice(0, -1)),
+        row:
+          12 -
+          [
+            "C",
+            "C#",
+            "D",
+            "D#",
+            "E",
+            "F",
+            "F#",
+            "G",
+            "G#",
+            "A",
+            "A#",
+            "B",
+          ].indexOf(notes[noteIndex].slice(0, -1)),
         column,
         width: gridWidth,
       });
       noteIndex = (noteIndex + 1) % notes.length; // Cycle through notes
-    } else if (char === '_') {
+    } else if (char === "_") {
       // Extend the width of the last note
       if (derivedNotes.length > 0) {
         derivedNotes[derivedNotes.length - 1].width += gridWidth;
@@ -38,18 +54,29 @@ const deriveNotesArray = (notes: string[], pattern: string) => {
 
 const PianoRoll: React.FC<PianoRollProps> = ({ notes, pattern }) => {
   const keys = [
-    'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'
+    "C",
+    "C#",
+    "D",
+    "D#",
+    "E",
+    "F",
+    "F#",
+    "G",
+    "G#",
+    "A",
+    "A#",
+    "B",
   ].reverse(); // Reverse the order to make C the bottom-most note
 
   const derivedNotes = deriveNotesArray(notes, pattern);
 
   return (
-    <div className="piano-roll" style={{ display: 'flex' }}>
+    <div className="piano-roll" style={{ display: "flex" }}>
       <div className="keyboard">
         {keys.map((key, rowIndex) => (
           <div
             key={rowIndex}
-            className={`key ${key.includes('#') ? 'black-key' : 'white-key'}`}
+            className={`key ${key.includes("#") ? "black-key" : "white-key"}`}
           />
         ))}
       </div>
