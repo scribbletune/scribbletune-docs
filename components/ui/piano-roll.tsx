@@ -1,6 +1,5 @@
 import React from "react";
-
-// Removed: Import styles globally instead
+import styles from "./piano-roll.module.css";
 
 interface PianoRollProps {
   notes: string[]; // Array of notes (e.g., ['C4', 'E4', 'G4', 'B4'])
@@ -71,20 +70,22 @@ const PianoRoll: React.FC<PianoRollProps> = ({ notes, pattern }) => {
   const derivedNotes = deriveNotesArray(notes, pattern);
 
   return (
-    <div className="piano-roll" style={{ display: "flex" }}>
-      <div className="keyboard">
+    <div className={styles.pianoRoll} style={{ display: "flex" }}>
+      <div className={styles.keyboard}>
         {keys.map((key, rowIndex) => (
           <div
             key={rowIndex}
-            className={`key ${key.includes("#") ? "black-key" : "white-key"}`}
+            className={`${styles.key} ${
+              key.includes("#") ? styles["black-key"] : styles["white-key"]
+            }`}
           />
         ))}
       </div>
-      <div className="grid">
+      <div className={styles.grid}>
         {Array.from({ length: 16 * 12 }).map((_, cellIndex) => (
           <div
             key={cellIndex}
-            className="grid-cell"
+            className={styles.gridCell}
             style={{
               gridColumn: Math.floor(cellIndex / 12) + 1,
               gridRow: (cellIndex % 12) + 1,
@@ -94,7 +95,7 @@ const PianoRoll: React.FC<PianoRollProps> = ({ notes, pattern }) => {
         {derivedNotes.map((note, index) => (
           <div
             key={index}
-            className="note"
+            className={styles.note}
             style={{
               gridColumn: `${note.column - 1} / span ${note.width}`,
               gridRow: note.row,
