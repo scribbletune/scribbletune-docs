@@ -25,7 +25,7 @@ export default function CodeBlock({ code }: CodeBlockProps) {
       >
         <Copy size={16} />
       </button>
-      <pre className="p-4 overflow-x-auto text-sm">
+      <pre className="p-8 overflow-x-auto text-sm">
         <code
           className="text-gray-300 leading-relaxed"
           dangerouslySetInnerHTML={{
