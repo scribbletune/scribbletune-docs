@@ -55,11 +55,10 @@ export default function ExamplesSidebar() {
           Documentation
         </Link>
         <Link
-          href="https://github.com/scribbletune/scribbletune/tree/master/examples"
-          target="_blank"
+          href="/about"
           className="text-gray-400 hover:text-white text-sm block"
         >
-          GitHub Examples
+          About
         </Link>
       </div>
     </aside>

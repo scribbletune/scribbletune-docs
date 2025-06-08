@@ -10,7 +10,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -27,6 +32,12 @@ body {
   background-image: linear-gradient(to right, #3b82f6, #8b5cf6);
 }
 
+.highlight {
+  background-color: #111418;
+  color: #ffc107;
+  padding: 10px;
+}
+
 /* Improve code block styling */
 pre {
   overflow-x: auto;
@@ -39,4 +50,3 @@ pre {
     flex-direction: column;
   }
 }
-
