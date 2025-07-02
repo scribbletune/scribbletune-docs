@@ -109,8 +109,9 @@ const clip = scribble.clip({
             <div className="flex items-start gap-4 border-b py-2">
               <span className="font-mono bg-gray-800 px-1 rounded">R</span>
               <span>
-                Use a random notes from the randomNotes property (if defined) OR
-                randomly set volume
+                If the randomNotes property is defined, use either a random
+                selection from it or the next note in the notes sequence, OR
+                randomly set the volume of the next note
               </span>
             </div>
             <div className="flex items-start gap-4 border-b py-2">
