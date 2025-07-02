@@ -20,13 +20,17 @@ export default function RootLayout({
       <head>
         <title>Scribbletune</title>
         <meta name="description" content="Create music with code" />
+      </head>
+      <body
+        className={`${inter.className} bg-[#1a1e24] text-gray-200 min-h-screen`}
+      >
         <Script
-          async
+          strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-BB3L4GLBNT"
         />
-        <Script id="gtag-init">
+        <Script id="gtag-init" strategy="afterInteractive">
           {`
-            if (window.location.hostname !== "localhost") {
+            if (typeof window !== 'undefined' && window.location.hostname !== "localhost") {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -34,22 +38,8 @@ export default function RootLayout({
             }
           `}
         </Script>
-      </head>
-      <body
-        className={`${inter.className} bg-[#1a1e24] text-gray-200 min-h-screen`}
-      >
         {children}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PLSRNRN"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
       </body>
     </html>
   );
 }
-
-import "./globals.css";
