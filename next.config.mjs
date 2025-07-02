@@ -18,9 +18,8 @@ const nextConfig = {
   },
   output: "export",
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === "production" ? "/scribbletune-docs" : "",
-  assetPrefix:
-    process.env.NODE_ENV === "production" ? "/scribbletune-docs/" : "",
+  basePath: "",
+  assetPrefix: "",
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
