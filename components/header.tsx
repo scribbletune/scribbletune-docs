@@ -7,21 +7,17 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
           <Music4 className="h-6 w-6" />
-          <span className="font-bold">Scribbletune</span>
+          <span className="font-bold">Music with Code</span>
         </Link>
         <nav className="flex items-center gap-6">
-          <Link href="/documentation" className="text-gray-200 hover:text-white">
-            Documentation
+          <Link href="/projects" className="text-gray-200 hover:text-white">
+            Projects
           </Link>
-          <Link href="/examples" className="text-gray-200 hover:text-white">
-            Examples
+          <Link href="/plugins" className="text-gray-200 hover:text-white">
+            Plugins
           </Link>
-          <Link
-            href="https://github.com/scribbletune/scribbletune"
-            target="_blank"
-            className="text-gray-200 hover:text-white"
-          >
-            Github
+          <Link href="/articles" className="text-gray-200 hover:text-white">
+            Articles
           </Link>
         </nav>
       </div>

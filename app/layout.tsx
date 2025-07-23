@@ -6,8 +6,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Scribbletune",
-  description: "Create music with code using JavaScript",
+  title: "Music with Code",
+  description: "Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research",
 };
 
 export default function RootLayout({
@@ -18,8 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Scribbletune</title>
-        <meta name="description" content="Create music with code" />
+        <title>Music with Code</title>
+        <meta name="description" content="Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research" />
       </head>
       <body
         className={`${inter.className} bg-[#1a1e24] text-gray-200 min-h-screen`}
