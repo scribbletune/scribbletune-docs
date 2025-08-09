@@ -16,9 +16,7 @@ export default function ScribblettuneExamples({
         <div className="w-64 shrink-0">
           <ExamplesSidebar />
         </div>
-        <div className="flex-1 min-w-0">
-          {children}
-        </div>
+        <div className="flex-1 min-w-0">{children}</div>
       </div>
     </div>
   );

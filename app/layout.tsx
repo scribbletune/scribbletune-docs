@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Music with Code",
-  description: "Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research",
+  description:
+    "Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research",
 };
 
 export default function RootLayout({
@@ -19,7 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Music with Code</title>
-        <meta name="description" content="Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research" />
+        <meta
+          name="description"
+          content="Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research"
+        />
       </head>
       <body
         className={`${inter.className} bg-[#1a1e24] text-gray-200 min-h-screen`}

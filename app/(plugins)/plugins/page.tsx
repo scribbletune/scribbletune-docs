@@ -1,45 +1,54 @@
-import Link from "next/link"
-import { Download, ExternalLink, Play } from "lucide-react"
+import Link from "next/link";
+import { Download, ExternalLink, Play } from "lucide-react";
 
 export default function PluginsPage() {
   const plugins = [
     {
       name: "Riff",
-      description: "AI-powered pattern generator for creating infinite musical possibilities with algorithmic composition.",
+      description:
+        "AI-powered pattern generator for creating infinite musical possibilities with algorithmic composition.",
       category: "Pattern Generator",
       status: "In Development",
       image: "/placeholder.svg", // You can add actual screenshots later
-      features: ["Algorithmic Patterns", "Real-time Generation", "MIDI Export", "Multiple Styles"],
+      features: [
+        "Algorithmic Patterns",
+        "Real-time Generation",
+        "MIDI Export",
+        "Multiple Styles",
+      ],
       demoVideo: "#", // YouTube link when available
       download: "#", // Download link when available
-      github: "#" // GitHub link if open source
-    }
+      github: "#", // GitHub link if open source
+    },
     // Future plugins will be added here easily
-  ]
+  ];
 
   const upcomingPlugins = [
     {
       name: "Chord Weaver",
-      description: "Advanced chord progression generator with voice leading and harmonic analysis.",
+      description:
+        "Advanced chord progression generator with voice leading and harmonic analysis.",
       category: "Harmony",
-      estimatedRelease: "Q2 2025"
+      estimatedRelease: "Q2 2025",
     },
     {
       name: "Rhythm Matrix",
-      description: "Polyrhythmic beat generator with complex time signatures and groove variations.",
+      description:
+        "Polyrhythmic beat generator with complex time signatures and groove variations.",
       category: "Rhythm",
-      estimatedRelease: "Q3 2025"
-    }
-  ]
+      estimatedRelease: "Q3 2025",
+    },
+  ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">
           Music Plugins
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl">
-          Creative tools and plugins for music production, from pattern generators to advanced synthesis engines.
+          Creative tools and plugins for music production, from pattern
+          generators to advanced synthesis engines.
         </p>
       </div>
 
@@ -47,10 +56,13 @@ export default function PluginsPage() {
         <h2 className="text-3xl font-bold mb-8">Available Plugins</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {plugins.map((plugin, index) => (
-            <div key={index} className="bg-gray-800/50 rounded-lg overflow-hidden border border-gray-700">
+            <div
+              key={index}
+              className="bg-gray-800/50 rounded-lg overflow-hidden border border-gray-700"
+            >
               <div className="aspect-video bg-gray-700 flex items-center justify-center">
-                <img 
-                  src={plugin.image} 
+                <img
+                  src={plugin.image}
                   alt={`${plugin.name} screenshot`}
                   className="w-full h-full object-cover"
                 />
@@ -64,9 +76,11 @@ export default function PluginsPage() {
                 </div>
                 <p className="text-gray-400 text-sm mb-2">{plugin.category}</p>
                 <p className="text-gray-300 mb-4">{plugin.description}</p>
-                
+
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-400 mb-2">Features</h4>
+                  <h4 className="text-sm font-semibold text-gray-400 mb-2">
+                    Features
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {plugin.features.map((feature, featureIndex) => (
                       <span
@@ -82,14 +96,14 @@ export default function PluginsPage() {
                 <div className="flex flex-wrap gap-3">
                   <Link
                     href={plugin.demoVideo}
-                    className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
                   >
                     <Play size={14} />
                     Demo Video
                   </Link>
                   <Link
                     href={plugin.download}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
+                    className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
                   >
                     <Download size={14} />
                     Download
@@ -112,7 +126,10 @@ export default function PluginsPage() {
         <h2 className="text-3xl font-bold mb-8">Upcoming Plugins</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {upcomingPlugins.map((plugin, index) => (
-            <div key={index} className="bg-gray-800/30 rounded-lg p-6 border border-gray-700">
+            <div
+              key={index}
+              className="bg-gray-800/30 rounded-lg p-6 border border-gray-700"
+            >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-xl font-semibold">{plugin.name}</h3>
                 <span className="bg-gray-700 text-gray-300 px-2 py-1 rounded text-xs">
@@ -126,18 +143,19 @@ export default function PluginsPage() {
         </div>
       </section>
 
-      <div className="mt-12 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-lg p-8 text-center">
+      <div className="mt-12 bg-gradient-to-r from-cyan-900/30 to-emerald-900/30 rounded-lg p-8 text-center">
         <h3 className="text-2xl font-semibold mb-3">Plugin Development</h3>
         <p className="text-gray-300 mb-4">
-          Interested in collaborating or have ideas for new plugins? Let's create something amazing together.
+          Interested in collaborating or have ideas for new plugins? Let's
+          create something amazing together.
         </p>
         <Link
           href="/articles"
-          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
         >
           Read Development Articles <ExternalLink size={16} />
         </Link>
       </div>
     </div>
-  )
+  );
 }

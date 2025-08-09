@@ -1,20 +1,26 @@
-import Link from "next/link"
-import { ArrowRight, Github, ExternalLink } from "lucide-react"
+import Link from "next/link";
+import { ArrowRight, Github, ExternalLink } from "lucide-react";
 
 export default function ProjectsPage() {
   const projects = [
     {
       name: "Scribbletune",
-      description: "A JavaScript library for creating music with code using simple and intuitive patterns.",
+      description:
+        "A JavaScript library for creating music with code using simple and intuitive patterns.",
       type: "Node.js Library",
       status: "Active",
       github: "https://github.com/scribbletune/scribbletune",
       documentation: "/projects/scribbletune/documentation",
       examples: "/projects/scribbletune/examples",
-      features: ["MIDI Generation", "Web Audio API", "Music Theory", "Pattern-based Composition"]
-    }
+      features: [
+        "MIDI Generation",
+        "Web Audio API",
+        "Music Theory",
+        "Pattern-based Composition",
+      ],
+    },
     // Future projects will be added here
-  ]
+  ];
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
@@ -23,13 +29,17 @@ export default function ProjectsPage() {
           Projects
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl">
-          Open source tools and libraries for creating music with code. From algorithmic composition to real-time audio processing.
+          Open source tools and libraries for creating music with code. From
+          algorithmic composition to real-time audio processing.
         </p>
       </div>
 
       <div className="grid gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800/50 rounded-lg p-8 border border-gray-700">
+          <div
+            key={index}
+            className="bg-gray-800/50 rounded-lg p-8 border border-gray-700"
+          >
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
                 <div className="flex items-center gap-3 mb-2">
@@ -93,11 +103,14 @@ export default function ProjectsPage() {
       </div>
 
       <div className="mt-12 bg-gray-800/30 rounded-lg p-8 text-center">
-        <h3 className="text-xl font-semibold mb-3">More Projects Coming Soon</h3>
+        <h3 className="text-xl font-semibold mb-3">
+          More Projects Coming Soon
+        </h3>
         <p className="text-gray-400">
-          Working on new tools for algorithmic composition, real-time audio processing, and music visualization.
+          Working on new tools for algorithmic composition, real-time audio
+          processing, and music visualization.
         </p>
       </div>
     </div>
-  )
+  );
 }

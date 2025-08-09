@@ -1,6 +1,14 @@
-import CodeBlock from "@/components/code-block"
-import Link from "next/link"
-import { ArrowRight, Music, Code, BookOpen, Zap, Puzzle, FileText } from "lucide-react"
+import CodeBlock from "@/components/code-block";
+import Link from "next/link";
+import {
+  ArrowRight,
+  Music,
+  Code,
+  BookOpen,
+  Zap,
+  Puzzle,
+  FileText,
+} from "lucide-react";
 
 export default function Home() {
   const sampleCode = `const scribble = require('scribbletune');
@@ -12,7 +20,7 @@ const clip = scribble.clip({
 });
 
 // Render a MIDI file of this clip
-scribble.midi(clip, 'c.mid');`
+scribble.midi(clip, 'c.mid');`;
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -24,8 +32,9 @@ scribble.midi(clip, 'c.mid');`
               Music with Code
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Explore the intersection of programming and music creation. From algorithmic composition to 
-              creative coding tools and research into the future of music technology.
+              A comprehensive platform for music creation through programming -
+              featuring open source libraries, creative plugins, and research
+              into the intersection of code and sound.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -54,8 +63,9 @@ scribble.midi(clip, 'c.mid');`
             </div>
             <h2 className="text-2xl font-bold mb-3">Open Source Projects</h2>
             <p className="text-gray-300 mb-4">
-              JavaScript libraries and tools for algorithmic composition, MIDI generation, 
-              and real-time audio processing. Built for developers and musicians.
+              JavaScript libraries and tools for algorithmic composition, MIDI
+              generation, and real-time audio processing. Built for developers
+              and musicians.
             </p>
             <Link
               href="/projects"
@@ -71,8 +81,8 @@ scribble.midi(clip, 'c.mid');`
             </div>
             <h2 className="text-2xl font-bold mb-3">Creative Plugins</h2>
             <p className="text-gray-300 mb-4">
-              AI-powered pattern generators, synthesis engines, and creative tools 
-              for modern music production workflows.
+              AI-powered pattern generators, synthesis engines, and creative
+              tools for modern music production workflows.
             </p>
             <Link
               href="/plugins"
@@ -88,8 +98,9 @@ scribble.midi(clip, 'c.mid');`
             </div>
             <h2 className="text-2xl font-bold mb-3">Research & Articles</h2>
             <p className="text-gray-300 mb-4">
-              Deep dives into music technology, algorithmic composition techniques, 
-              and the intersection of artificial intelligence and creativity.
+              Deep dives into music technology, algorithmic composition
+              techniques, and the intersection of artificial intelligence and
+              creativity.
             </p>
             <Link
               href="/articles"
@@ -104,9 +115,12 @@ scribble.midi(clip, 'c.mid');`
       {/* Code Example Section */}
       <section className="py-16 px-4 mb-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">Start Creating with Scribbletune</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            Start Creating with Scribbletune
+          </h2>
           <p className="text-center text-gray-400 mb-6">
-            One of our flagship projects - see how easy it is to create music with code:
+            One of our flagship projects - see how easy it is to create music
+            with code:
           </p>
           <CodeBlock code={sampleCode} />
           <div className="mt-8 text-center">
@@ -120,6 +134,5 @@ scribble.midi(clip, 'c.mid');`
         </div>
       </section>
     </div>
-  )
+  );
 }
-

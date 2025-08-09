@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Music4 } from "lucide-react"
+import Link from "next/link";
+import { Music4 } from "lucide-react";
 
 export default function Header() {
   return (
@@ -22,6 +22,5 @@ export default function Header() {
         </nav>
       </div>
     </header>
-  )
+  );
 }
-

@@ -1,14 +1,15 @@
-import { ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function ScribbletuneDocs() {
   return (
     <div className="prose prose-invert max-w-none">
       <h1>Scribbletune Documentation</h1>
       <p className="lead">
-        Scribbletune is a JavaScript library that helps you create music with code using simple and intuitive patterns.
+        Scribbletune is a JavaScript library that helps you create music with
+        code using simple and intuitive patterns.
       </p>
-      
+
       <div className="grid md:grid-cols-2 gap-6 mt-8">
         <div className="bg-gray-800/50 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-3">Getting Started</h3>
@@ -63,5 +64,5 @@ export default function ScribbletuneDocs() {
         </div>
       </div>
     </div>
-  )
+  );
 }
