@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import clsx from "clsx";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 interface SiteHeaderProps {
   containerClassName?: string;
@@ -11,9 +13,9 @@ interface SiteHeaderProps {
 }
 
 const navLinks = [
-  { href: "/projects", label: "Projects" },
-  { href: "/plugins", label: "Plugins" },
-  { href: "/articles", label: "Articles" },
+  { href: "/projects", label: "Projects", color: "text-blue-400" },
+  { href: "/plugins", label: "Plugins", color: "text-fuchsia-400" },
+  { href: "/articles", label: "Articles", color: "text-emerald-400" },
 ];
 
 export function SiteHeader({
@@ -22,6 +24,11 @@ export function SiteHeader({
   paddingY = "py-4",
   border = true,
 }: SiteHeaderProps) {
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    pathname === href || pathname?.startsWith(href + "/");
+
   return (
     <header
       className={clsx(border && "border-b border-gray-800", "bg-[#1a1e24]")}
@@ -48,15 +55,29 @@ export function SiteHeader({
           </span>
         </Link>
         <nav className="flex items-center gap-6">
-          {navLinks.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="text-gray-200 hover:text-white"
-            >
-              {l.label}
-            </Link>
-          ))}
+          {navLinks.map((l) => {
+            const active = isActive(l.href);
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={clsx(
+                  "relative transition-colors",
+                  active
+                    ? clsx(l.color, "font-semibold")
+                    : "text-gray-300 hover:text-gray-100"
+                )}
+              >
+                {l.label}
+                {active && (
+                  <span
+                    className="absolute -bottom-2 left-0 h-0.5 w-full bg-gradient-to-r from-transparent via-current to-transparent"
+                    aria-hidden="true"
+                  />
+                )}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>
