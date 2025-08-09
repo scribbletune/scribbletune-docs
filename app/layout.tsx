@@ -1,17 +1,18 @@
 import type React from "react";
-import { Figtree, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Figtree, Sora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
 const figtree = Figtree({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600"], // pruned to necessary weights
   display: "swap",
 });
-const spaceGrotesk = Space_Grotesk({
+const sora = Sora({
   subsets: ["latin"],
   variable: "--font-heading",
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 const jetbrainsMono = JetBrains_Mono({
@@ -41,7 +42,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${figtree.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans bg-[#1a1e24] text-gray-200 min-h-screen`}
+        className={`${figtree.variable} ${sora.variable} ${jetbrainsMono.variable} font-sans bg-[#1a1e24] text-gray-200 min-h-screen`}
       >
         <Script
           strategy="afterInteractive"
