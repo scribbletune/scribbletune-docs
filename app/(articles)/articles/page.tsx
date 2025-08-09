@@ -47,7 +47,7 @@ export default function ArticlesPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-rose-400">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-emerald-400">
           Articles
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl">
@@ -64,10 +64,10 @@ export default function ArticlesPage() {
             .map((article, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-r from-amber-900/30 to-rose-900/30 rounded-lg p-8 mb-8 border border-amber-500/20"
+                className="bg-gradient-to-r from-green-900/30 to-emerald-900/30 rounded-lg p-8 mb-8 border border-green-500/20"
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-amber-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                  <span className="bg-green-600 text-white px-2 py-1 rounded text-xs font-semibold">
                     FEATURED
                   </span>
                   <span className="text-gray-400 text-sm">
@@ -99,7 +99,7 @@ export default function ArticlesPage() {
                   </div>
                   <Link
                     href={`/articles/${article.slug}`}
-                    className="bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors"
+                    className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors"
                   >
                     Read Article <ArrowRight size={16} />
                   </Link>
@@ -146,7 +146,7 @@ export default function ArticlesPage() {
                     </div>
                     <Link
                       href={`/articles/${article.slug}`}
-                      className="text-amber-400 hover:text-amber-300 flex items-center gap-1"
+                      className="text-green-400 hover:text-green-300 flex items-center gap-1"
                     >
                       Read More <ArrowRight size={14} />
                     </Link>
@@ -190,7 +190,7 @@ export default function ArticlesPage() {
               Get notified when new articles about music technology and creative
               coding are published.
             </p>
-            <button className="w-full bg-rose-600 hover:bg-rose-700 text-white px-4 py-2 rounded-md transition-colors">
+            <button className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors">
               Subscribe
             </button>
           </div>

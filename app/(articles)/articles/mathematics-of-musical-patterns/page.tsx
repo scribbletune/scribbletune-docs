@@ -7,7 +7,7 @@ export default function ArticlePage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       <Link
         href="/articles"
-        className="text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 mb-8"
+        className="text-green-400 hover:text-green-300 inline-flex items-center gap-1 mb-8"
       >
         <ArrowLeft size={16} />
         Back to Articles
@@ -28,13 +28,13 @@ export default function ArticlePage() {
             </div>
           </div>
           <div className="flex gap-2 mb-6">
-            <span className="bg-amber-900/50 text-amber-400 px-3 py-1 rounded-full text-sm">
+            <span className="bg-green-900/50 text-green-400 px-3 py-1 rounded-full text-sm">
               Mathematics
             </span>
-            <span className="bg-rose-900/50 text-rose-400 px-3 py-1 rounded-full text-sm">
+            <span className="bg-emerald-900/50 text-emerald-400 px-3 py-1 rounded-full text-sm">
               Patterns
             </span>
-            <span className="bg-green-900/50 text-green-400 px-3 py-1 rounded-full text-sm">
+            <span className="bg-lime-900/50 text-lime-400 px-3 py-1 rounded-full text-sm">
               Algorithms
             </span>
           </div>

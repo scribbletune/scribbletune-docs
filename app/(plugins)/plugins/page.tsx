@@ -43,7 +43,7 @@ export default function PluginsPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-fuchsia-400">
           Music Plugins
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl">
@@ -96,14 +96,14 @@ export default function PluginsPage() {
                 <div className="flex flex-wrap gap-3">
                   <Link
                     href={plugin.demoVideo}
-                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
+                    className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
                   >
                     <Play size={14} />
                     Demo Video
                   </Link>
                   <Link
                     href={plugin.download}
-                    className="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
+                    className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-4 py-2 rounded-md flex items-center gap-2 transition-colors text-sm"
                   >
                     <Download size={14} />
                     Download
@@ -143,7 +143,7 @@ export default function PluginsPage() {
         </div>
       </section>
 
-      <div className="mt-12 bg-gradient-to-r from-cyan-900/30 to-emerald-900/30 rounded-lg p-8 text-center">
+      <div className="mt-12 bg-gradient-to-r from-purple-900/30 to-fuchsia-900/30 rounded-lg p-8 text-center">
         <h3 className="text-2xl font-semibold mb-3">Plugin Development</h3>
         <p className="text-gray-300 mb-4">
           Interested in collaborating or have ideas for new plugins? Let's
@@ -151,7 +151,7 @@ export default function PluginsPage() {
         </p>
         <Link
           href="/articles"
-          className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
+          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
         >
           Read Development Articles <ExternalLink size={16} />
         </Link>
