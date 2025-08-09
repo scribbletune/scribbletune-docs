@@ -5,23 +5,38 @@ export default function ExamplesSidebar() {
     {
       title: "BASICS",
       links: [
-        { href: "/examples/riff", label: "Riff" },
-        { href: "/examples/simple-melody", label: "Simple Melody" },
-        { href: "/examples/chord-progressions", label: "Chord Progressions" },
+        { href: "/projects/scribbletune/examples/riff", label: "Riff" },
+        {
+          href: "/projects/scribbletune/examples/simple-melody",
+          label: "Simple Melody",
+        },
+        {
+          href: "/projects/scribbletune/examples/chord-progressions",
+          label: "Chord Progressions",
+        },
       ],
     },
     {
       title: "BEATS",
       links: [
-        { href: "/examples/breakbeats", label: "Breakbeats" },
-        { href: "/examples/drumloop", label: "Drumloop" },
+        {
+          href: "/projects/scribbletune/examples/breakbeats",
+          label: "Breakbeats",
+        },
+        { href: "/projects/scribbletune/examples/drumloop", label: "Drumloop" },
       ],
     },
     {
       title: "BROWSER",
       links: [
-        { href: "/examples/random-chords", label: "Random Chords" },
-        { href: "/examples/beat", label: "Beat (browser)" },
+        {
+          href: "/projects/scribbletune/examples/random-chords",
+          label: "Random Chords",
+        },
+        {
+          href: "/projects/scribbletune/examples/beat",
+          label: "Beat (browser)",
+        },
       ],
     },
   ];

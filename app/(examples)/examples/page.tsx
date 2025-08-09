@@ -9,9 +9,15 @@ export default function ExamplesHomePage() {
       icon: Music,
       color: "blue",
       examples: [
-        { name: "Riff", href: "/examples/riff" },
-        { name: "Simple Melody", href: "/examples/simple-melody" },
-        { name: "Chord Progressions", href: "/examples/chord-progressions" },
+        { name: "Riff", href: "/projects/scribbletune/examples/riff" },
+        {
+          name: "Simple Melody",
+          href: "/projects/scribbletune/examples/simple-melody",
+        },
+        {
+          name: "Chord Progressions",
+          href: "/projects/scribbletune/examples/chord-progressions",
+        },
       ],
     },
     {
@@ -20,8 +26,11 @@ export default function ExamplesHomePage() {
       icon: Layers,
       color: "purple",
       examples: [
-        { name: "Breakbeats", href: "/examples/breakbeats" },
-        { name: "Drumloop", href: "/examples/drumloop" },
+        {
+          name: "Breakbeats",
+          href: "/projects/scribbletune/examples/breakbeats",
+        },
+        { name: "Drumloop", href: "/projects/scribbletune/examples/drumloop" },
       ],
     },
     {
@@ -30,21 +39,37 @@ export default function ExamplesHomePage() {
       icon: Code,
       color: "orange",
       examples: [
-        { name: "Random Chords", href: "/examples/random-chords" },
-        { name: "Beat (browser)", href: "/examples/beat" },
+        {
+          name: "Random Chords",
+          href: "/projects/scribbletune/examples/random-chords",
+        },
+        {
+          name: "Beat (browser)",
+          href: "/projects/scribbletune/examples/beat",
+        },
       ],
     },
   ];
 
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6">Examples</h1>
+      <h1 className="text-3xl font-bold mb-6">Examples (Legacy Path)</h1>
 
-      <p className="mb-8 text-lg">
-        Explore these examples to learn how to create music with Scribbletune.
-        Each example includes code snippets and explanations to help you
-        understand the concepts.
-      </p>
+      <div className="mb-8 text-lg space-y-4">
+        <p>
+          This legacy /examples path has moved. The canonical location is now
+          under <code>/projects/scribbletune/examples</code>.
+        </p>
+        <p>Please update bookmarks. Links below point to the new structure.</p>
+        <p>
+          <a
+            href="/projects/scribbletune/examples"
+            className="text-blue-400 hover:text-blue-300 underline"
+          >
+            Go to Scribbletune Examples Home →
+          </a>
+        </p>
+      </div>
 
       <div className="grid gap-8">
         {exampleCategories.map((category) => {
