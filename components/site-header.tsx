@@ -36,14 +36,14 @@ export function SiteHeader({
       >
         <Link href="/" className="flex items-center gap-2 group">
           <Image
-            src="https://scribbletune.com/images/scribbletune-logo.png"
+            src="/scribbletune-logo.png"
             alt="Scribbletune logo"
             width={32}
             height={32}
             className="h-8 w-8 object-contain"
             priority
           />
-          <span className="font-bold text-xl tracking-tight group-hover:opacity-90 transition-opacity">
+          <span className="font-bold text-xl tracking-tight group-hover:opacity-90 transition-opacity font-heading">
             Scribbletune
           </span>
         </Link>

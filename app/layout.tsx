@@ -1,12 +1,27 @@
 import type React from "react";
-import { Inter } from "next/font/google";
+import { Figtree, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const figtree = Figtree({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata = {
-  title: "Music with Code",
+  title: "Scribbletune",
   description:
     "Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research",
 };
@@ -19,14 +34,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Music with Code</title>
+        <title>Scribbletune</title>
         <meta
           name="description"
           content="Explore music creation through programming - algorithmic composition, creative coding tools, and music technology research"
         />
       </head>
       <body
-        className={`${inter.className} bg-[#1a1e24] text-gray-200 min-h-screen`}
+        className={`${figtree.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans bg-[#1a1e24] text-gray-200 min-h-screen`}
       >
         <Script
           strategy="afterInteractive"
