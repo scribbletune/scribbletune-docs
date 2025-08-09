@@ -31,7 +31,7 @@ export default function DocsSidebar() {
       title: "GETTING STARTED",
       links: [
         {
-          href: "/documentation/getting-started/installation",
+          href: "/projects/scribbletune/documentation/getting-started/installation",
           label: "Installation",
         },
       ],
@@ -40,23 +40,43 @@ export default function DocsSidebar() {
       title: "CORE",
       links: [
         {
-          href: "/documentation/core/clip",
+          href: "/projects/scribbletune/documentation/core/clip",
           label: "clip",
           submenu:
-            pathname === "/documentation/core/clip" ? clipParams : undefined,
+            pathname === "/projects/scribbletune/documentation/core/clip"
+              ? clipParams
+              : undefined,
         },
-        { href: "/documentation/core/scale", label: "scale" },
-        { href: "/documentation/core/chord", label: "chord" },
-        { href: "/documentation/core/arp", label: "arp" },
-        { href: "/documentation/core/progression", label: "progression" },
-        { href: "/documentation/core/midi", label: "midi" },
+        {
+          href: "/projects/scribbletune/documentation/core/scale",
+          label: "scale",
+        },
+        {
+          href: "/projects/scribbletune/documentation/core/chord",
+          label: "chord",
+        },
+        { href: "/projects/scribbletune/documentation/core/arp", label: "arp" },
+        {
+          href: "/projects/scribbletune/documentation/core/progression",
+          label: "progression",
+        },
+        {
+          href: "/projects/scribbletune/documentation/core/midi",
+          label: "midi",
+        },
       ],
     },
     {
       title: "BROWSER",
       links: [
-        { href: "/documentation/browser/session", label: "session" },
-        { href: "/documentation/browser/channel", label: "channel" },
+        {
+          href: "/projects/scribbletune/documentation/browser/session",
+          label: "session",
+        },
+        {
+          href: "/projects/scribbletune/documentation/browser/channel",
+          label: "channel",
+        },
       ],
     },
   ];
@@ -80,7 +100,8 @@ export default function DocsSidebar() {
                   </Link>
                   {/* Submenu for clip */}
                   {link.label === "clip" &&
-                    pathname === "/documentation/core/clip" &&
+                    pathname ===
+                      "/projects/scribbletune/documentation/core/clip" &&
                     link.submenu && (
                       <ul className="ml-4 mt-1 space-y-1">
                         {link.submenu.map((param) => (
